@@ -1,0 +1,755 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*
+{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior:smooth;
+}
+
+.loader
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    background: #fff;
+}
+
+.loader img
+{
+    width: 500px;
+}
+
+.lost
+{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.lost h1
+{
+    line-height: 2;
+}
+
+.banner
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    background-color: #fff;
+}
+
+header
+{
+    width: 100%;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; height:70px;
+    background: #fff;
+}
+
+.logo, .signup
+{
+    margin: 20px;
+}
+
+.logo img
+{
+    width: 70px;
+}
+
+nav .links ul
+{
+    display: flex;
+    align-items: center;
+}
+
+nav .links ul li
+{
+    list-style: none;
+    padding: 10px 20px;
+}
+
+nav .links ul li a
+{
+    color: #020202;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+nav .links ul li a.activeLink
+{
+    color: #5a97d5;
+}
+
+nav .links ul li.menu
+{
+    display: none;
+}
+
+nav .links ul li img
+{
+    width: 25px;
+    cursor: pointer;
+}
+
+nav .links ul li a:hover
+{
+    color: skyblue;
+}
+
+.signup a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.signup span
+{
+    padding: 10px 20px;
+    background: #5a97d5;
+    border-radius: 30px;
+}
+
+.nav2
+{
+    position: absolute;
+    left: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.nav2.activeNav
+{
+    left: 0;
+}
+
+.nav2 ul
+{
+    text-align: center;
+}
+
+.nav2 ul li
+{
+    list-style: none;
+    padding: 20px;
+}
+
+.nav2 ul li a
+{
+    color: #020202;
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.nav2 ul li img
+{
+    width: 25px;
+    cursor: pointer;
+}
+
+.nav2 ul li a:hover
+{
+    color: skyblue;
+}
+
+.swiper
+{
+    width: 100%;
+}
+
+.swiper-slide
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 450px;
+    border-radius: 20px;
+    padding: 30px;
+    background:url('../Images/Housebg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center ;
+}
+
+.con2
+{
+    background:url('../Images/Car (2).jpg') no-repeat;
+    background-size: cover;
+    background-position: center ;
+}
+
+.con3
+{
+    background:url('../Images/bike (4).jpg') no-repeat;
+    background-size: cover;
+    background-position: center ;
+}
+
+.content .para
+{
+    width: 600px;
+}
+
+.content .para h1
+{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.content .para h2
+{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.content .para p
+{
+    font-size: 18px ;
+    margin:20px 0;
+    color: #fff;
+}
+
+.content .para span
+{
+    background: #fff;
+    color: skyblue;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.feather
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.items
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px;
+}
+
+.items .heading
+{
+    font-weight: 400;
+    font-family: 'Alkatra', cursive;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.span
+{
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+
+.sect
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.sect .item
+{
+    width: 300px;
+    height: 420px;
+    box-shadow: 2px 5px 5px 2px gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.sect .item .txt
+{
+    margin: 0 20px;
+    height: 50%;
+}
+
+.sect .item .txt span
+{
+    font-size: 22px;
+    font-family: 'Alkatra', cursive;
+}
+
+.sect .item .txt h2
+{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.sect .item .txt p
+{
+    margin: 10px 0;
+}
+
+.sect .item .txt .btn
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+
+.item .img
+{
+    height: 50%;
+}
+
+.item .img img
+{
+    width: 100%;
+}
+
+.about
+{
+    width: 1000px;
+    height: 500px;
+    background: #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.about .para
+{
+    color: #fff;
+    width: 400px;
+}
+
+.about .para h1
+{
+    font-size: 3rem;
+    font-family: 'Alkatra', cursive;
+}
+
+.about .para h2
+{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.about .para p
+{
+    margin: 20px 0;
+}
+
+.about .para span
+{
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.about .img img
+{
+    width: 400px;
+}
+
+.more
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.more .heading
+{
+    font-size: 2.1rem;
+}
+
+.pics
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pics .pic
+{
+    width: 500px;
+    height: 300px;
+    margin: 20px;
+    border-bottom-right-radius: 30px;
+    cursor: pointer;
+}
+
+.pics .pic:hover .txt
+{
+    opacity: 1;
+}
+
+.pics .pic .txt
+{
+    width: 100%;
+    height: 300px;
+    background: #ffffffd8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.pics .pic .txt h2
+{
+    font-size: 3rem;
+    font-family: 'Alkatra', cursive;
+}
+
+.pics .pic .txt p
+{
+    width: 300px;
+    font-size: 15px;
+}
+
+.pics .pic .txt span
+{
+    cursor: pointer;
+    display: block;
+    margin: 20px;
+    font-size: 20px;
+    border: 1px solid #000;
+    padding: 10px 20px;
+}
+
+.pics .pic.p1
+{
+    background: url('../Images/Flat.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pics .pic.p2
+{
+    background: url('../Images/Boat.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pics .pic.p3
+{
+    background: url('../Images/Hotel.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pics .pic.p4
+{
+    background: url('../Images/Restorant.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pics .pic.p5
+{
+    background: url('../Images/park.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pics .pic.p6
+{
+    background: url('../Images/Stadium.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pics .pic.p7
+{
+    background: url('../Images/Sofa.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pics .pic.p8
+{
+    background: url('../Images/wedding-hall.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#items
+{
+    display: none;
+}
+
+iframe
+{
+    display: none;
+}
+
+footer
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 500px;
+    background: #020202;
+    position: relative;
+    top: 200px;
+}
+
+footer *
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .sect1, .sect2
+{
+    width: 100%;
+}
+
+footer .sect1
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .sect1 span
+{
+    margin: 20px;
+}
+
+footer .sect1 span img
+{
+    width: 200px;
+}
+
+footer .sect1 span h3
+{
+    font-size: 2rem;
+    font-family: 'Alkatra', cursive;
+}
+
+footer .sect1 span ul li
+{
+    list-style: none;
+    padding: 10px 20px;
+}
+
+footer .sect1 span ul li a
+{
+    font-size: 1.3rem;
+}
+
+footer .sect2 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .sect2 .social
+{
+    margin: 10px;
+}
+
+footer .sect2 .social ul
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer .sect2 .social ul li
+{
+    list-style: none;
+    padding: 10px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.763);
+    border-radius: 5px;
+    width: 50px;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+footer .sect2 .social ul li:hover
+{
+    background: #5a97d5;
+}
+
+footer .sect2 .social ul li a i
+{
+    font-size: 1.5rem;
+}
+
+footer .sect2 p
+{
+    font-size: 20px;
+}
+
+footer .sect2 p span
+{
+    font-size: 22px;
+    font-family: 'Alkatra', cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1080px) {
+    .about .img
+    {
+        display: none;
+    }
+    .about
+    {
+        width: 500px;
+    }
+}
+
+@media (max-width:900px) {
+    nav .links ul li
+    {
+        display: none;
+    }
+    nav .links ul li.menu
+    {
+        display: block;
+    }
+    .swiper-button-prev
+    {
+        display: none;
+    }
+    .swiper-button-next
+    {
+        display: none;
+    }
+    .loader img
+    {
+        width: 400px;
+    }
+}
+
+@media (max-width:1300px)
+{
+    .banner
+    {
+        height: auto;
+    }
+    .content
+    {
+        height: auto;
+        width: 600px;
+        justify-content: center;
+        margin: 10px;
+    }
+}
+
+@media (max-width:650px) {
+    .content
+    {
+        width: 100%;
+        height: 420px;
+    }
+    .content .para h1
+    {
+        font-size: 2rem;
+    }
+    .content .para h2
+    {
+        font-size: 1.5rem;
+    }
+    .content .para p
+    {
+        font-size: 15px;
+    }
+    .content .para
+    {
+        width: 100%;
+    }
+    .about
+    {
+        width: 100%;
+    }
+    .about .para 
+    {
+        text-align: center;
+    }
+    footer
+    {
+        height: auto;
+        text-align: center;
+    }
+}
+
