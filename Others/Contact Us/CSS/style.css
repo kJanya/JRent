@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*
+{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior:smooth;
+}
+
+.loader
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    background: #fff;
+}
+
+.loader img
+{
+    width: 500px;
+}
+
+.lost
+{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.lost h1
+{
+    line-height: 2;
+}
+
+.map
+{
+    width: 100%;
+    height: 100vh;
+    background: #020202;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.map i
+{
+    font-size: 2rem;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    cursor: pointer;
+}   
+
+
+.banner
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    background-color: #fff;
+}
+
+header
+{
+    width: 100%;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; height:70px;
+    background: #fff;
+}
+
+
+.logo, .signup
+{
+    margin: 20px;
+}
+
+.logo img
+{
+    width: 70px;
+}
+
+nav .links ul
+{
+    display: flex;
+    align-items: center;
+}
+
+nav .links ul li
+{
+    list-style: none;
+    padding: 10px 20px;
+}
+
+nav .links ul li a
+{
+    color: #020202;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+nav .links ul li a.activeLink
+{
+    color: #5a97d5;
+}
+
+nav .links ul li.menu
+{
+    display: none;
+}
+
+nav .links ul li img
+{
+    width: 25px;
+    cursor: pointer;
+}
+
+nav .links ul li a:hover
+{
+    color: skyblue;
+}
+
+.signup a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.signup span
+{
+    padding: 10px 20px;
+    background: #5a97d5;
+    border-radius: 30px;
+}
+
+.nav2
+{
+    position: absolute;
+    left: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.nav2.activeNav
+{
+    left: 0;
+}
+
+.nav2 ul
+{
+    text-align: center;
+}
+
+.nav2 ul li
+{
+    list-style: none;
+    padding: 20px;
+}
+
+.nav2 ul li a
+{
+    color: #020202;
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.nav2 ul li img
+{
+    width: 25px;
+    cursor: pointer;
+}
+
+.nav2 ul li a:hover
+{
+    color: skyblue;
+}
+
+.contact
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.contact .contents
+{
+    margin: 30px;
+}
+
+.contact .contents h1
+{
+    font-size: 3rem;
+    font-family: 'Alkatra', cursive;
+    line-height: 1;
+}
+
+.contact .contents p
+{
+    margin: 10px 5px;
+    font-size: 25px;
+}
+
+.contact .contents span
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 70px;
+    box-shadow: 1px 2px 10px 2px gainsboro;
+    margin: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.contact .contents span:hover
+{
+    background: #5a97d5;
+}
+
+.contact .contents span:hover *, 
+.contact .contents span:hover .para a
+{
+    color: #fff;
+}
+
+.contact .contents i
+{
+    font-size: 1.5rem;
+    color: #5a97d5;
+}
+
+.contact .contents span .para
+{
+    width: 200px;
+}
+
+.contact .contents span .para h2
+{
+    font-size: 1.2rem;
+    font-family: 'Alkatra', cursive;
+}
+
+.contact .contents span .para a
+{
+    font-size: 15px;
+    color: #5a97d5;
+    text-decoration: none;
+}
+
+.contact .form
+{
+    width: 500px;
+    height: 500px;
+    box-shadow: 1px 2px 10px 2px gainsboro;
+    border-radius: 2px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .form h2
+{
+    font-size: 2.2rem;
+    font-family: 'Alkatra', cursive;
+}
+
+.contact .form input
+{
+    width: 100%;
+    padding: 15px 10px;
+    margin: 10px;
+    border: none;
+    background: #f4f4f4;
+    font-size: 18px;
+    border-radius: 2px;
+    color: #5a97d5;
+}
+
+.contact .form input[type="submit"]
+{
+    width: 200px;
+    margin-top: 10px;
+    background: #5a97d5;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contact .form input:focus
+{
+    outline: 2px solid #5a97d5;
+}
+
+.contact .form p
+{
+    width: 100%;
+    text-align: left;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.contact .form textarea
+{
+    width: 100%;
+    height: 100px;
+    border: none;
+    background: #f4f4f4;
+    padding: 10px;
+    font-size: 18px;
+    color: #5a97d5;
+}
+
+.contact .form textarea:focus
+{
+    outline: 2px solid #5a97d5;
+}
+
+footer
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 500px;
+    background: #020202;
+    position: relative;
+    top: 200px;
+}
+
+footer *
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .sect1, .sect2
+{
+    width: 100%;
+}
+
+footer .sect1
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .sect1 span
+{
+    margin: 20px;
+}
+
+footer .sect1 span img
+{
+    width: 200px;
+}
+
+footer .sect1 span h3
+{
+    font-size: 2rem;
+    font-family: 'Alkatra', cursive;
+}
+
+footer .sect1 span ul li
+{
+    list-style: none;
+    padding: 10px 20px;
+}
+
+footer .sect1 span ul li a
+{
+    font-size: 1.3rem;
+}
+
+footer .sect2 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .sect2 .social
+{
+    margin: 10px;
+}
+
+footer .sect2 .social ul
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer .sect2 .social ul li
+{
+    list-style: none;
+    padding: 10px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.763);
+    border-radius: 5px;
+    width: 50px;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+footer .sect2 .social ul li:hover
+{
+    background: #5a97d5;
+}
+
+footer .sect2 .social ul li a i
+{
+    font-size: 1.5rem;
+}
+
+footer .sect2 p
+{
+    font-size: 20px;
+}
+
+
+iframe
+{
+    display: none;
+}
+
+@media (max-width:650px) {
+    footer
+    {
+        height: auto;
+        text-align: center;
+    }
+}
+
+@media (max-width:1350px)
+{
+    .banner
+    {
+        height: auto;
+    }
+} 
+
+
+@media (max-width:900px) {
+    nav .links ul li
+    {
+        display: none;
+    }
+    nav .links ul li.menu
+    {
+        display: block;
+    }
+    .loader img
+    {
+        width: 400px;
+    }
+    .imgBx
+    {
+        display: none;
+    }
+}
+
+@media (max-with:550px) {
+    .contact .form
+    {
+        width: 100%;
+    }
+    .contact .contents
+    {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .contact .contents h1
+    {
+        font-size: 1rem;
+        text-align: center;
+    }
+}

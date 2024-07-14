@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="../../Images/logo.png">
+    <title>Rent | Properties</title>
+</head>
+<body id="body">
+    <div class="loader" id="loader">
+        <img src="../../Images/loader.gif">
+    </div>
+    <div class="lost" id="lost">
+        <h1>Oops! No Internet</h1>
+        <h2>Check Your Internet Connection.</h2>
+    </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../../Images/logo.png">
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../About Us/index.html">About Us</a></li>
+                    <li><a href="#" class="activeLink">Properties</a></li>
+                    <li><a href="../Rent Items/index.html">Rent Items</a></li>
+                    <li><a href="../Contact Us/index.html">Contact Us</a></li>
+                    <li class="menu"><img src="../../Images/menu.png" onclick="showhide()"></li>
+                </ul>
+            </div>
+            <div class="signup">
+                <a href="../SignUp/index.html"><span>Sign Up</span></a>
+            </div>
+        </nav>
+        <nav class="nav2" id="nav">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../About Us/index.html">About Us</a></li>
+                <li><a href="#" class="activeLink">Properties</a></li>
+                <li><a href="../Rent Items/index.html">Rent Items</a></li>
+                <li><a href="../Contact Us/index.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <div class="banner">
+        <h1>Property Types</h1>
+        <div class="proitems">
+            <div class="sect">
+                <div class="proitem">
+                    <img src="../../Images/apartment.png" class="apart">
+                    <h2>Apartments</h2>
+                    <p>123 Properties</p>
+                </div>
+                <div class="proitem">
+                    <img src="../../Images/villa.png">
+                    <h2>Villaes</h2>
+                    <p>123 Properties</p>
+                </div>
+                <div class="proitem">
+                    <img src="../../Images/home.png">
+                    <h2>Houses</h2>
+                    <p>123 Properties</p>
+                </div>
+                <div class="proitem">
+                    <img src="../../Images/office.png">
+                    <h2>Offices</h2>
+                    <p>123 Properties</p>
+                </div>
+            </div>
+            <p id="m">More</p>
+            <div class="sect" id="more1">
+                <div class="proitem">
+                    <img src="../../Images/building.png">
+                    <h2>Flats</h2>
+                    <p>123 Properties</p>
+                </div>
+                <div class="proitem">
+                    <img src="../../Images/hotel.png">
+                    <h2>Hotels</h2>
+                    <p>123 Properties</p>
+                </div>
+                <div class="proitem">
+                    <img src="../../Images/restorant.png">
+                    <h2>Restorants</h2>
+                    <p>123 Properties</p>
+                </div>
+                <div class="proitem">
+                    <img src="../../Images/townhouse.png" class="townhouse">
+                    <h2>Townhouses</h2>
+                    <p>123 Properties</p>
+                </div>
+            </div>
+            <div class="sect" id="more2">
+                <div class="proitem">
+                    <img src="../../Images/shop.png">
+                    <h2>Shops</h2>
+                    <p>123 Properties</p>
+                </div>
+                <div class="proitem">
+                    <img src="../../Images/garage.png">
+                    <h2>Garages</h2>
+                    <p>123 Properties</p>
+                </div>
+                <div class="proitem">
+                    <img src="../../Images/wedding_halls.png">
+                    <h2>Wedding Halls</h2>
+                    <p>123 Properties</p>
+                </div>
+                <div class="proitem">
+                    <img src="../../Images/park.png" class="park">
+                    <h2>Parks</h2>
+                    <p>123 Properties</p>
+                </div>
+            </div>
+        </div>
+        <h1>Our Properties</h1>
+        <div class="portfolio">
+            <div class="filterBtns" id="filterBtns">
+                <button class="btn active" data-filter="all">All</button>
+                <button class="btn" data-filter="apartment">Apartments</button>
+                <button class="btn" data-filter="villa">Villaes</button>
+                <button class="btn" data-filter="house">Houses</button>
+                <button class="btn" data-filter="office">Offices</button>
+            </div>
+            <div class="images">
+                <div class="pics">
+                    <div class="pic" data-item="apartment">
+                        <img src="../../Images/Apartment.jpg">
+                        <div class="txt">
+                            <h2>Apartment</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic suscipit expedita delectus eligendi ex explicabo beatae?</p>
+                            <span>Rent Now</span>
+                        </div>
+                    </div>
+                    <div class="pic" data-item="villa">
+                        <img src="../../Images/Villa.jpg">
+                        <div class="txt">
+                            <h2>Villa</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic suscipit expedita delectus eligendi ex explicabo beatae?</p>
+                            <span>Rent Now</span>
+                        </div>
+                    </div>
+                    <div class="pic" data-item="house">
+                        <img src="../../Images/House (2).jpg">
+                        <div class="txt">
+                            <h2>House</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic suscipit expedita delectus eligendi ex explicabo beatae?</p>
+                            <span>Rent Now</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pics">
+                    <div class="pic" data-item="office">
+                        <img src="../../Images/Office.jpg">
+                        <div class="txt">
+                            <h2>Office</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic suscipit expedita delectus eligendi ex explicabo beatae?</p>
+                            <span>Rent Now</span>
+                        </div>
+                    </div>
+                    <div class="pic" data-item="villa">
+                        <img src="../../Images/Villa2.jpg">
+                        <div class="txt">
+                            <h2>Villa</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic suscipit expedita delectus eligendi ex explicabo beatae?</p>
+                            <span>Rent Now</span>
+                        </div>
+                    </div>
+                    <div class="pic" data-item="house">
+                        <img src="../../Images/Housebg.jpg">
+                        <div class="txt">
+                            <h2>House</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic suscipit expedita delectus eligendi ex explicabo beatae?</p>
+                            <span>Rent Now</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pics">
+                    <div class="pic" data-item="apartment">
+                        <img src="../../Images/Flat.jpg">
+                        <div class="txt">
+                            <h2>Apartment</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic suscipit expedita delectus eligendi ex explicabo beatae?</p>
+                            <span>Rent Now</span>
+                        </div>
+                    </div>
+                    <div class="pic" data-item="office">
+                        <img src="../../Images/Townhouse2.jpg">
+                        <div class="txt">
+                            <h2>Office</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic suscipit expedita delectus eligendi ex explicabo beatae?</p>
+                            <span>Rent Now</span>
+                        </div>
+                    </div>
+                    <div class="pic" data-item="house">
+                        <img src="../../Images/home.jpg">
+                        <div class="txt">
+                            <h2>House</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic suscipit expedita delectus eligendi ex explicabo beatae?</p>
+                            <span>Rent Now</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer>
+                <div class="sect1">
+                    <span>
+                        <img src="../../Images/logo.png">
+                        <h3>Rent Company</h3>
+                    </span>
+                    <span>
+                        <ul>
+                            <li><a href="#">House</a></li>
+                            <li><a href="#">Cars</a></li>
+                            <li><a href="#">Bikes/Scooty</a></li>
+                            <li><a href="#">Flats</a></li>
+                            <li><a href="#">Hotels</a></li>
+                            <li><a href="#">And More</a></li>
+                        </ul>
+                    </span>
+                    <span>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Sales</a></li>
+                            <li><a href="#">Properties</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </span>
+                </div>
+                <hr>
+                <div class="sect2">
+                    <div class="social">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                    <p>&copy;Copyright. All rights reserved By <span>Janya Jaiswal</span></p>
+                </div>
+            </footer>
+        
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wSY6nDCSAtk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+
+
+
+
+
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

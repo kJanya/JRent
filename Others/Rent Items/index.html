@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="../../Images/logo.png">
+    <title>Rent | Items</title>
+</head>
+<body id="body">
+    <div class="loader" id="loader">
+        <img src="../../Images/loader.gif">
+    </div>
+    <div class="lost" id="lost">
+        <h1>Oops! No Internet</h1>
+        <h2>Check Your Internet Connection.</h2>
+    </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../../Images/logo.png">
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../About Us/index.html">About Us</a></li>
+                    <li><a href="../Properties/index.html">Properties</a></li>
+                    <li><a href="#" class="activeLink">Rent Items</a></li>
+                    <li><a href="../Contact Us/index.html">Contact Us</a></li>
+                    <li class="menu"><img src="../../Images/menu.png" onclick="showhide()"></li>
+                </ul>
+            </div>
+            <div class="signup">
+                <a href="../SignUp/index.html"><span>Sign Up</span></a>
+            </div>
+        </nav>
+        <nav class="nav2" id="nav">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../About Us/index.html">About Us</a></li>
+                <li><a href="../Properties/index.html">Properties</a></li>
+                <li><a href="#" class="activeLink">Rent Items</a></li>
+                <li><a href="../Contact Us/index.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <div class="banner">
+        <h1>Items Types</h1>
+        <div class="proitems">
+            <div class="sect">
+                <div class="proitem">
+                    <img src="../../Images/car.png">
+                    <h2>Cars</h2>
+                    <p>123 Properties</p>
+                </div>
+                <div class="proitem">
+                    <img src="../../Images/bikeicon.png">
+                    <h2>Bikes</h2>
+                    <p>123 Properties</p>
+                </div>
+                <div class="proitem">
+                    <img src="../../Images/scooty.png">
+                    <h2>Scooty</h2>
+                    <p>123 Properties</p>
+                </div>
+                <div class="proitem">
+                    <img src="../../Images/boat.png">
+                    <h2>Boats</h2>
+                    <p>123 Properties</p>
+                </div>
+            </div>
+            <p id="m">More</p>
+            <div class="sect" id="more1">
+                <div class="proitem">
+                    <img src="../../Images/jewrelly.png">
+                    <h2>Jewellery</h2>
+                    <p>123 Properties</p>
+                </div>
+                <div class="proitem">
+                    <img src="../../Images/wedding dress.png">
+                    <h2>Wedding Dresses</h2>
+                    <p>123 Properties</p>
+                </div>
+                <div class="proitem">
+                    <img src="../../Images/toys.png">
+                    <h2>Toys</h2>
+                    <p>123 Properties</p>
+                </div>
+                <div class="proitem">
+                    <img src="../../Images/furniture.png">
+                    <h2>Furniture</h2>
+                    <p>123 Properties</p>
+                </div>
+            </div>
+        </div>
+        <h1>Our Items</h1>
+        <div class="portfolio">
+            <div class="filterBtns" id="filterBtns">
+                <button class="btn active" data-filter="all">All</button>
+                <button class="btn" data-filter="cars">Cars</button>
+                <button class="btn" data-filter="furniture">Furniture</button>
+                <button class="btn" data-filter="toys">Toys</button>
+                <button class="btn" data-filter="jewellery">Jewellery</button>
+            </div>
+            <div class="images">
+                <div class="pics">
+                    <div class="pic" data-item="furniture">
+                        <img src="../../Images/furniture.jpg">
+                        <div class="txt">
+                            <h2>Bed</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic suscipit expedita delectus eligendi ex explicabo beatae?</p>
+                            <span>Rent Now</span>
+                        </div>
+                    </div>
+                    <div class="pic" data-item="toys">
+                        <img src="../../Images/toy1.jpg">
+                        <div class="txt">
+                            <h2>LEGO toy</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic suscipit expedita delectus eligendi ex explicabo beatae?</p>
+                            <span>Rent Now</span>
+                        </div>
+                    </div>
+                    <div class="pic" data-item="all">
+                        <img src="../../Images/Boat.jpg">
+                        <div class="txt">
+                            <h2>Boat</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic suscipit expedita delectus eligendi ex explicabo beatae?</p>
+                            <span>Rent Now</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pics">
+                    <div class="pic" data-item="jewellery">
+                        <img src="../../Images/neckless.jfif">
+                        <div class="txt">
+                            <h2>Neckless</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic suscipit expedita delectus eligendi ex explicabo beatae?</p>
+                            <span>Rent Now</span>
+                        </div>
+                    </div>
+                    <div class="pic" data-item="toys">
+                        <img src="../../Images/toy2.jpg">
+                        <div class="txt">
+                            <h2>Toy Car</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic suscipit expedita delectus eligendi ex explicabo beatae?</p>
+                            <span>Rent Now</span>
+                        </div>
+                    </div>
+                    <div class="pic" data-item="furniture">
+                        <img src="../../Images/Sofa.jpg">
+                        <div class="txt">
+                            <h2>Sofa</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic suscipit expedita delectus eligendi ex explicabo beatae?</p>
+                            <span>Rent Now</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pics">
+                    <div class="pic" data-item="cars">
+                        <img src="../../Images/Car (1).jpg">
+                        <div class="txt">
+                            <h2>BMW 7</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic suscipit expedita delectus eligendi ex explicabo beatae?</p>
+                            <span>Rent Now</span>
+                        </div>
+                    </div>
+                    <div class="pic" data-item="cars">
+                        <img src="../../Images/Car (3).jpg">
+                        <div class="txt">
+                            <h2>BMW 6</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic suscipit expedita delectus eligendi ex explicabo beatae?</p>
+                            <span>Rent Now</span>
+                        </div>
+                    </div>
+                    <div class="pic" data-item="jewellery">
+                        <img src="../../Images/ring.jpg">
+                        <div class="txt">
+                            <h2>Ring</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic suscipit expedita delectus eligendi ex explicabo beatae?</p>
+                            <span>Rent Now</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer>
+                <div class="sect1">
+                    <span>
+                        <img src="../../Images/logo.png">
+                        <h3>Rent Company</h3>
+                    </span>
+                    <span>
+                        <ul>
+                            <li><a href="#">House</a></li>
+                            <li><a href="#">Cars</a></li>
+                            <li><a href="#">Bikes/Scooty</a></li>
+                            <li><a href="#">Flats</a></li>
+                            <li><a href="#">Hotels</a></li>
+                            <li><a href="#">And More</a></li>
+                        </ul>
+                    </span>
+                    <span>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Sales</a></li>
+                            <li><a href="#">Properties</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </span>
+                </div>
+                <hr>
+                <div class="sect2">
+                    <div class="social">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                    <p>&copy;Copyright. All rights reserved By <span>Janya Jaiswal</span></p>
+                </div>
+            </footer>
+        
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wSY6nDCSAtk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+
+
+
+
+
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

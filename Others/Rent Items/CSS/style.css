@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*
+{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior:smooth;
+}
+
+.loader
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    background: #fff;
+}
+
+.loader img
+{
+    width: 500px;
+}
+
+.lost
+{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.lost h1
+{
+    line-height: 2;
+}
+
+.banner
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+}
+
+header
+{
+    width: 100%;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; height:70px;
+    background: #fff;
+}
+
+.logo, .signup
+{
+    margin: 20px;
+}
+
+.logo img
+{
+    width: 70px;
+}
+
+nav .links ul
+{
+    display: flex;
+    align-items: center;
+}
+
+nav .links ul li
+{
+    list-style: none;
+    padding: 10px 20px;
+}
+
+nav .links ul li a
+{
+    color: #020202;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+nav .links ul li a.activeLink
+{
+    color: #5a97d5;
+}
+
+nav .links ul li.menu
+{
+    display: none;
+}
+
+nav .links ul li img
+{
+    width: 25px;
+    cursor: pointer;
+}
+
+nav .links ul li a:hover
+{
+    color: skyblue;
+}
+
+.signup a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.signup span
+{
+    padding: 10px 20px;
+    background: #5a97d5;
+    border-radius: 30px;
+}
+
+.nav2
+{
+    position: absolute;
+    left: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.nav2.activeNav
+{
+    left: 0;
+}
+
+.nav2 ul
+{
+    text-align: center;
+}
+
+.nav2 ul li
+{
+    list-style: none;
+    padding: 20px;
+}
+
+.nav2 ul li a
+{
+    color: #020202;
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.nav2 ul li img
+{
+    width: 25px;
+    cursor: pointer;
+}
+
+.nav2 ul li a:hover
+{
+    color: skyblue;
+}
+
+h1
+{
+    font-family: 'Alkatra', cursive;
+    font-size: 2rem;
+}
+
+.proitems
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.proitems .sect
+{
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.proitems p
+{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.proitems .sect .proitem
+{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 2px 10px 2px gainsboro;
+    background: #fff;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.proitems .sect .proitem img
+{
+    width: 50px;
+    margin: 20px 10px;
+}
+
+
+.proitems .sect .proitem img.townhouse
+{
+    width: 70px;
+}
+
+#more1
+{
+    display: none;
+}
+
+.portfolio
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portfolio .filterBtns
+{
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio .filterBtns button
+{
+    padding: 10px 20px;
+    width: 200px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    margin: 10px;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+.portfolio .images
+{
+    width: 100%;
+}
+
+.portfolio .pics
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.pics .pic
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    box-shadow: 1px 2px 10px 2px gainsboro;
+    border-bottom-right-radius: 30px;
+    margin: 20px 0;
+}
+
+.pics .pic.hide
+{
+    display: none;
+}
+
+.pics .pic .txt
+{
+    margin: 0 20px;
+    height: 50%;
+}
+
+.pics .pic .txt span
+{
+    font-size: 22px;
+    font-family: 'Alkatra', cursive;
+    cursor: pointer;
+}
+
+.pics .pic .txt h2
+{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.pics .pic .txt p
+{
+    margin: 10px 0;
+}
+
+.pics img
+{
+    width: 100%;
+    height: 200px;
+}
+
+iframe
+{
+    display: none;
+}
+
+footer
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 500px;
+    background: #020202;
+    position: relative;
+    top: 200px;
+}
+
+footer *
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .sect1, .sect2
+{
+    width: 100%;
+}
+
+footer .sect1
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .sect1 span
+{
+    margin: 20px;
+}
+
+footer .sect1 span img
+{
+    width: 200px;
+}
+
+footer .sect1 span h3
+{
+    font-size: 2rem;
+    font-family: 'Alkatra', cursive;
+}
+
+footer .sect1 span ul li
+{
+    list-style: none;
+    padding: 10px 20px;
+}
+
+footer .sect1 span ul li a
+{
+    font-size: 1.3rem;
+}
+
+footer .sect2 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .sect2 .social
+{
+    margin: 10px;
+}
+
+footer .sect2 .social ul
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer .sect2 .social ul li
+{
+    list-style: none;
+    padding: 10px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.763);
+    border-radius: 5px;
+    width: 50px;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+footer .sect2 .social ul li:hover
+{
+    background: #5a97d5;
+}
+
+footer .sect2 .social ul li a i
+{
+    font-size: 1.5rem;
+}
+
+footer .sect2 p
+{
+    font-size: 20px;
+}
+
+footer .sect2 p span
+{
+    font-size: 22px;
+    font-family: 'Alkatra', cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1080px) {
+    .about .img
+    {
+        display: none;
+    }
+    .about
+    {
+        width: 500px;
+    }
+}
+
+@media (max-width:900px) {
+    nav .links ul li
+    {
+        display: none;
+    }
+    nav .links ul li.menu
+    {
+        display: block;
+    }
+    .loader img
+    {
+        width: 400px;
+    }
+}
+
+@media (max-width:1300px)
+{
+    .banner
+    {
+        height: auto;
+    }
+}
+
+@media (max-width:650px) {
+    footer
+    {
+        height: auto;
+        text-align: center;
+    }
+    .portfolio .filterBtns
+    {
+        justify-content: center;
+    }
+}
+
